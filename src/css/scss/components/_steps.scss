@@ -1,0 +1,103 @@
+.step {
+  &-item {
+    &.active {
+      opacity: 1;
+
+      &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 4px;
+
+        @media all and (min-width: $mq-tablet) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.theme {
+  &-mercury .step-item.active {
+    &::after {
+      background-color: $color-light-blue;
+    }
+
+    @media all and (min-width: $mq-tablet) {
+      border-color: $color-light-blue;
+      background-color: $color-light-blue;
+    }
+  }
+  &-venus .step-item.active {
+    &::after {
+      background-color: $color-yellow;
+    }
+
+    @media all and (min-width: $mq-tablet) {
+      border-color: $color-yellow;
+      background-color: $color-yellow;
+    }
+  }
+  &-earth .step-item.active {
+    &::after {
+      background-color: $color-purple;
+    }
+
+    @media all and (min-width: $mq-tablet) {
+      border-color: $color-purple;
+      background-color: $color-purple;
+    }
+  }
+  &-mars .step-item.active {
+    &::after {
+      background-color: $color-red;
+    }
+
+    @media all and (min-width: $mq-tablet) {
+      border-color: $color-red;
+      background-color: $color-red;
+    }
+  }
+  &-jupiter .step-item.active {
+    &::after {
+      background-color: $color-dark-orange;
+    }
+
+    @media all and (min-width: $mq-tablet) {
+      border-color: $color-dark-orange;
+      background-color: $color-dark-orange;
+    }
+  }
+  &-saturn .step-item.active {
+    &::after {
+      background-color: $color-orange;
+    }
+
+    @media all and (min-width: $mq-tablet) {
+      border-color: $color-orange;
+      background-color: $color-orange;
+    }
+  }
+  &-uranus .step-item.active {
+    &::after {
+      background-color: $color-teal;
+    }
+
+    @media all and (min-width: $mq-tablet) {
+      border-color: $color-teal;
+      background-color: $color-teal;
+    }
+  }
+  &-neptune .step-item.active {
+    &::after {
+      background-color: $color-blue;
+    }
+
+    @media all and (min-width: $mq-tablet) {
+      border-color: $color-blue;
+      background-color: $color-blue;
+    }
+  }
+}

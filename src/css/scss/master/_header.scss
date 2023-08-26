@@ -1,0 +1,94 @@
+@mixin navIndicator($color) {
+  &::before {
+    background-color: $color;
+  }
+
+  @media all and (min-width: $mq-tablet) {
+    &.active::after {
+      background-color: $color;
+    }
+  }
+}
+
+.header {
+  &-nav {
+    top: 101%;
+    height: calc(100vh - 75px);
+    background-color: $color-dark-blue;
+
+    &-item {
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+      }
+
+      &::before {
+        top: 3px;
+        left: 0;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+
+        @media all and (min-width: $mq-tablet) {
+          display: none;
+        }
+      }
+
+      &::after {
+        top: 9px;
+        right: 0;
+        width: 4px;
+        height: 8px;
+        background: url('../../assets/icons/chevron.svg') 50% / cover;
+
+        @media all and (min-width: $mq-tablet) {
+          top: initial;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 4px;
+          background: none;
+        }
+
+        @media all and (min-width: $mq-desktop) {
+          top: 0;
+          bottom: initial;
+        }
+      }
+
+      &.mercury {
+        @include navIndicator(#def4fc);
+      }
+
+      &.venus {
+        @include navIndicator(#f7cc7f);
+      }
+
+      &.earth {
+        @include navIndicator(#545bfe);
+      }
+
+      &.mars {
+        @include navIndicator(#ff6a45);
+      }
+
+      &.jupiter {
+        @include navIndicator(#ecad7a);
+      }
+
+      &.saturn {
+        @include navIndicator(#fccb6b);
+      }
+
+      &.uranus {
+        @include navIndicator(#65f0d5);
+      }
+
+      &.neptune {
+        @include navIndicator(#497efa);
+      }
+    }
+  }
+}
