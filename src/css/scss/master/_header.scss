@@ -1,11 +1,11 @@
-@mixin navIndicator($color) {
+@mixin theme($planetColor, $navColor) {
   &::before {
-    background-color: $color;
+    background-color: $planetColor;
   }
 
   @media all and (min-width: $mq-tablet) {
     &.active::after {
-      background-color: $color;
+      background-color: $navColor;
     }
   }
 }
@@ -59,35 +59,35 @@
       }
 
       &.mercury {
-        @include navIndicator(#def4fc);
+        @include theme(#def4fc, $color-light-blue);
       }
 
       &.venus {
-        @include navIndicator(#f7cc7f);
+        @include theme(#f7cc7f, $color-yellow);
       }
 
       &.earth {
-        @include navIndicator(#545bfe);
+        @include theme(#545bfe, $color-purple);
       }
 
       &.mars {
-        @include navIndicator(#ff6a45);
+        @include theme(#ff6a45, $color-red);
       }
 
       &.jupiter {
-        @include navIndicator(#ecad7a);
+        @include theme(#ecad7a, $color-dark-orange);
       }
 
       &.saturn {
-        @include navIndicator(#fccb6b);
+        @include theme(#fccb6b, $color-orange);
       }
 
       &.uranus {
-        @include navIndicator(#65f0d5);
+        @include theme(#65f0d5, $color-teal);
       }
 
       &.neptune {
-        @include navIndicator(#497efa);
+        @include theme(#497efa, $color-blue);
       }
     }
   }

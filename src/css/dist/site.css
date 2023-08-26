@@ -123,39 +123,39 @@ body {
     background-color: #def4fc; }
   @media all and (min-width: 768px) {
     .header-nav-item.mercury.active::after {
-      background-color: #def4fc; } }
+      background-color: #419ebb; } }
   .header-nav-item.venus::before {
     background-color: #f7cc7f; }
   @media all and (min-width: 768px) {
     .header-nav-item.venus.active::after {
-      background-color: #f7cc7f; } }
+      background-color: #eda249; } }
   .header-nav-item.earth::before {
     background-color: #545bfe; }
   @media all and (min-width: 768px) {
     .header-nav-item.earth.active::after {
-      background-color: #545bfe; } }
+      background-color: #6d2ed5; } }
   .header-nav-item.mars::before {
     background-color: #ff6a45; }
   @media all and (min-width: 768px) {
     .header-nav-item.mars.active::after {
-      background-color: #ff6a45; } }
+      background-color: #d14c32; } }
   .header-nav-item.jupiter::before {
     background-color: #ecad7a; }
   @media all and (min-width: 768px) {
     .header-nav-item.jupiter.active::after {
-      background-color: #ecad7a; } }
+      background-color: #d83a34; } }
   .header-nav-item.saturn::before {
     background-color: #fccb6b; }
   @media all and (min-width: 768px) {
     .header-nav-item.saturn.active::after {
-      background-color: #fccb6b; } }
+      background-color: #cd5120; } }
   .header-nav-item.uranus::before {
     background-color: #65f0d5; }
   @media all and (min-width: 768px) {
     .header-nav-item.uranus.active::after {
-      background-color: #65f0d5; } }
+      background-color: #1ec1a2; } }
   .header-nav-item.neptune::before {
     background-color: #497efa; }
   @media all and (min-width: 768px) {
     .header-nav-item.neptune.active::after {
-      background-color: #497efa; } }
+      background-color: #2d68f0; } }
